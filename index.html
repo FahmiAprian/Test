@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Love U</title>
+  </head>
+  <body background="./image/AMK.jpg">
+    <h1>Hai Marlianitami</h1>
+    <img src="https://media.giphy.com/media/Y2yobM6q5zESXw1SQs/giphy.gif" alt="" />
+    <h1>Mau gak jalanin hidup bareng aku??</h1>
+    <button id="btn_mau" onclick='alert("I <3 U")'>Mau</button>
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">Gamau</button>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById('btn_mau');
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + 'px';
+      id.style.top = j + 'px';
+    }
+  </script>
+</html>
